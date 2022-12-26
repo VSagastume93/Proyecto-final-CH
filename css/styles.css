@@ -235,18 +235,26 @@ justify-content: flex-end;
 .cajaC4{
     grid-column: 1/3;
     grid-row: 3/5;
-    background-image: url('../assets/index/Farcry\ 3.svg');
-    background-position: center;
-    background-size: cover;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
     overflow: hidden;
 }
 
-.cajaC4 .playButton{
-    margin-right: 300px;
+.cajaC4 video{
+    display: block;
+    width: 100%;
+}
+
+.cajaC4 a{
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+}
+
+.cajaC4 a img{
+    width: 300px;
 }
 
 
@@ -675,32 +683,10 @@ padding-left: 50px;
         align-items: center;
     }
 
-    .mainContainer .games .cajaC4 .playButton{
-        margin: 0;
+    .cajaC4 a img{
+        width: 150px;
     }
-
-    .mainContainer .games .cajaC4 .playButton a{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-    }
-
-    .mainContainer .games .cajaC4 .playButton img{
-        width: 50%;
-    }
-
-    .mainContainer .games .cajaC4 .logo{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .mainContainer .games .cajaC4 .logo img{
-        width: 75%;
-    }
-
-
+    
     .mainContainer .games .cajaC5{
         grid-column: 1/3;
         grid-row: 6/7;
@@ -807,4 +793,9 @@ padding-left: 50px;
         text-align: center;
     }
 
+}
+
+.consolasContainer{
+    margin: 30px 122px 0 122px;
+    padding: 0;
 }
