@@ -861,6 +861,7 @@ padding-left: 50px;
     -webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 	        animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
+
 .mainGames .bannerPrincipal .info{
     display: flex;
     flex-direction: column;
@@ -939,7 +940,6 @@ padding-left: 50px;
 
 .mainGames .nuevosLanzamientos{
     width: 100%;
-    height: 40vw;
     padding: 20px;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../assets/juegos/background-games.png");
     background-size: cover;
@@ -967,29 +967,111 @@ padding-left: 50px;
 .mainGames .nuevosLanzamientos .gamesContainer{
     width: 100%;
     padding: 20px;
+    gap: 20px;
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .mainGames .nuevosLanzamientos .gamesContainer .gameCard{
     width: 200px;
     height: 250px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    justify-content: center;
+    gap: 15px;
     align-items: center;
     text-decoration: none;
 }
 
 .mainGames .nuevosLanzamientos .gamesContainer .gameCard img{
     border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .mainGames .nuevosLanzamientos .gamesContainer .gameCard h2{
     color: white;
-    font-size: 16px;
+    font-size: 12px;
     text-decoration: none;
 }
+
+
+/* mobile version */
+
+@media (max-width: 999px){
+
+    /* banner principal */
+
+    .mainGames .bannerPrincipal{
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('../assets/juegos/banner-fortnite.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding-right: 50px;
+        overflow: hidden;
+    }
+
+    /* nuevos lanzamientos */
+
+    .mainGames .nuevosLanzamientos{
+        background-size: contain;
+    }
+
+}
+
+@media (max-width: 570px){
+
+    .mainGames .bannerPrincipal{
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('../assets/juegos/banner-fortnite.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .mainGames .bannerPrincipal img{
+        width: 100%;
+    }
+
+    .mainGames .bannerPrincipal .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: justify;
+        gap: 20px;
+        width: 100%;
+        height: 50%;
+    }
+
+    .mainGames .bannerPrincipal .info h1{
+        font-weight: 400;
+        font-size: 5vw;
+    }
+    
+    .mainGames .bannerPrincipal .info h2{
+        font-size: 3vw;
+        padding: 10px;
+        font-weight: 400;
+    }
+
+    .mainGames .bannerPrincipal .info .botonJuegos{
+        font-size: 3vw;
+    }
+}
+
 
 
 /* FIN PAGINA JUEGOS */
