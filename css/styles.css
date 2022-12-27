@@ -984,10 +984,16 @@ padding-left: 50px;
     text-decoration: none;
 }
 
+.mainGames .nuevosLanzamientos .gamesContainer .gameCard img:hover{
+   transform: scale(1.1); 
+   box-shadow: 1px 0px 10px 2px rgba(255, 255, 255, 0.75);
+}
+
 .mainGames .nuevosLanzamientos .gamesContainer .gameCard img{
     border-radius: 10px;
     height: 200px;
     object-fit: cover;
+    transition: ease 0.5s;
 }
 
 .mainGames .nuevosLanzamientos .gamesContainer .gameCard h2{
