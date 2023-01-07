@@ -1227,9 +1227,18 @@
 @media (max-width: 515px) {
 
     .swiper-slide {
-        width: 300px;
+        width: 400px;
     }
 }
+
+@media (max-width: 450px) {
+
+    .swiper-slide {
+        width: 350px;
+    }
+}
+
+
 
 
 
