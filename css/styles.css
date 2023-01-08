@@ -1125,6 +1125,16 @@
     height: auto;
     border-radius: 30px;
     position: relative;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    filter: blur(4px);
+}
+
+.swiper-slide-active{
+    filter: blur(0px);
+}
+
+.swiper-slide-active .game img{
+    filter: brightness(0.7);
 }
 
 .swiper-slide img {
@@ -1150,11 +1160,16 @@
     gap: 8px;
 }
 
+.swiper-slide .leyenda img{
+    width: 5vw;
+    border-radius: 0px;
+}
+
 .swiper-slide .leyenda h1{
     color: white;
     text-shadow: black 0.1em 0.1em 0.2em;
     font-weight: 400;
-    font-size: 30px
+    font-size: 30px;
 }
 
 .swiper-slide .leyenda h2{
@@ -1222,12 +1237,23 @@
     .swiper-slide .leyenda h3{
         font-size: 8px
     }
+
+    .swiper-slide .leyenda img{
+        width: 8vw;
+        border-radius: 0px;
+    }
+    
 }
 
 @media (max-width: 515px) {
 
     .swiper-slide {
         width: 400px;
+    }
+
+    .swiper-slide .leyenda img{
+        width: 8vw;
+        border-radius: 0px;
     }
 }
 
