@@ -1160,9 +1160,11 @@
     gap: 8px;
 }
 
-.swiper-slide .leyenda img{
-    width: 5vw;
-    border-radius: 0px;
+.swiper-slide .leyenda .gp-img{
+    background-image: url("../assets/juegos/Carousel/gamepass-logo.png");
+    background-size: cover;
+    width: 90px;
+    height: 50px;
 }
 
 .swiper-slide .leyenda h1{
@@ -1238,9 +1240,9 @@
         font-size: 8px
     }
 
-    .swiper-slide .leyenda img{
-        width: 8vw;
-        border-radius: 0px;
+    .swiper-slide .leyenda .gp-img{
+        width: 70px;
+        height: 40px;
     }
     
 }
@@ -1251,8 +1253,10 @@
         width: 400px;
     }
 
-    .swiper-slide .leyenda img{
-        width: 8vw;
+    .swiper-slide .leyenda .gp-img{
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 50px;
         border-radius: 0px;
     }
 }
